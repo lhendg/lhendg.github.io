@@ -713,7 +713,7 @@ mark,
     height: auto;
     padding: .25rem;
 
-    border: 1px solid #e2e8f0;
+    border: 0px solid #e2e8f0;
     border-radius: .375rem;
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(31, 45, 61, .075);
