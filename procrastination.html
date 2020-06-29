@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>Lhen DG</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/1.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Go Pro -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+
+            <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="project.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Heartaches and Procrastination</h1>
+            <span class="meta">Posted by on June 18, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <br/>
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I have a fair share of heartbreaks in the past, my high school lover that I thought was the one back then, or that guy from UST who forgot that I even existed. I could go on, but nobody like's mess on their professional (?) website. Throughout all the binge-eating and sob stories with my friends, I learned how I could get over it as soon as I could. </p>
+          <p><b>The secret is to deal with the rush of emotions as upfront as possible.</b> Dealing with anger, pain and humiliation right when I felt them will save me from a thousand of flashbacks months after. Letting myself wallow for several days—or weeks, then delete every conversation, every picture that I could possibly look back to. Then voila, who's that guy again? <b>The thing is, I'm very good at managing my emotions but I haven't learned to apply this in the other aspects of my life.</b></p>
+          <p>Daunting tasks are almost as bad as heartaches, maybe even worse. It makes me anxious and snappy. Ignoring these tasks is much like sweeping emotions under the rug, for some time I can forget about it. And as Phil Dunphy would like to put it,</p>
+          <h6><blockquote>"Until you sweep too much under the rug. Then you have a lumpy rug... creates a tripping hazard... and open yourself up to lawsuits."</blockquote></h6>
+          <p>What I'm trying to say is, I need to apply these principles to my everlasting problem that is procrastination. Throughout life, I have survived by merely learning how to stay up all night and finish the tasks at hand. Not studying for a quiz until several days before, not taking notes, not doing a project until two nights before the deadline.</p>
+          <p>And even though I don't remember much about high school or even college, I can recall sleepless nights and wanting to get over with. Promising myself not to do it again, only to find myself in the same position a few months later. In fact, I felt like if I wasn't so bad at dealing with all of my tasks, I would have accomplished so much more.</p>
+          <p>The bottomline is,</p>
+          <h6><blockquote>I need to learn how to front load my pain. </blockquote></h6>
+          <p>I have to force myself to deal with the pain instead of blatantly ignoring it until I had to do it. It's not like its gonna be less painful when I do it. By not doing it right away, I am only worsening the situation. </p>
+          <h6>Here's to doing so much more in the future.</p><h6>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <br/><br/>
+  <!-- Footer -->
+  <footer class="position-relative" id="footer-main">
+      <div class="footer pt-lg-1 footer-dark bg-dark">
+          <div class="container pt-1">
+            <br/>
+              <div class="row align-items-center justify-content-md-between pb-4">
+                  <div class="col-md-12">
+                      <div class="copyright text-sm font-weight-bold text-center text-md-middle">
+                          &copy; Lhen de Guzman | Theme by: <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Webpixels</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Core JS  -->
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+  <!-- Quick JS -->
+  <script src="assets/js/quick-website.js"></script>
+  <!-- Feather Icons -->
+  <script>
+      feather.replace({
+          'width': '1em',
+          'height': '1em'
+      })
+  </script>
+</body>
+
+</html>
