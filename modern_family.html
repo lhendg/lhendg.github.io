@@ -47,14 +47,6 @@
         body.loaded>div.preloader {
             animation: hidePreloader .5s linear .5s forwards;
         }
-        .footer {
-         position: fixed;
-         left: 0;
-         bottom: 0;
-         width: 100%;
-         color: white;
-         text-align: center;
-      }
     </style>
     <script>
         window.addEventListener("load", function() {
@@ -78,15 +70,15 @@
         </div>
     </div>
     <!-- Go Pro -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <!-- Brand -->
 
             <!-- Toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Collapse -->
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
                     <li class="nav-item ">
@@ -96,59 +88,80 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item ">
-                          <a class="nav-link" href="project.html">Portfolio</a>
+                        <a class="nav-link" href="project.html">Portfolio</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="slice slice-xsm">
+    <!-- Main content -->
+    <br/><br/>
+    <section class="slice py-3">
       <div class="container">
           <div class="row mb-5 justify-content-center text-center">
               <div class="col-lg-6">
-                  <h1 class=" mt-4">Projects</h1>
+                  <h2 class=" mt-4">Modern Family Data Visualization</h2>
               </div>
           </div>
-          <br/><br/><br/><br/>
-          <div class="row">
-              <div class="col-xl-4 col-sm-6 mt-n7">
-                  <div class="card">
-                      <div class="d-flex p-5">
-                          <div class="pl-4">
-                              <a href="https://www.ftwfoundation.org/recruitment-agency" target=_blank><h5 class="lh-130">Job Acceptance or Decline</h5></a>
-                              <p class="text-muted mb-0">
-                                  Worked with Maritime Recruitment Agency to determine the factors that affects Job Offer Acceptance or Decline.
-                              </p><br/><span class="badge badge-warning badge-pill">Data Analysis</span> <span class="badge badge-misc badge-pill">Project Management</span>
-                          </div>
-                      </div>
+          <div class="py-3">
+              <div class="row row-grid justify-content-between align-items-center">
+                  <div class="col-lg-5 order-lg-2">
+                      <p class="lead my-4">
+                        I just finished watching Modern Family a few days ago and to be totally honest, I cried my eyes out while watching the last episode. Now that I have nothing to watch, at least for now, might as well create a project out of it.</p>
+                      <p class="lead my-4">
+                        First, I would like to mention that this project was inspired by Isabella B's <a href="https://isabella-b.com/project/community-imdb-episodes/">the community project</a>.</p>
                   </div>
-              </div>
-              <div class="col-xl-4 col-sm-6 mt-sm-n7">
-                  <div class="card">
-                      <div class="d-flex p-5">
-                          <div class="pl-4">
-                              <a href="index.html"><h5 class="lh-130">Predicting Advertising Sales</h5></a>
-                              <p class="text-muted mb-0">
-                              Webapp that runs on a Regression Algorithm to predict Advertising sales based on Expediture.
-                            </p><br/><span class="badge badge-info badge-pill">Machine Learning</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-4 col-md-12 col-sm-6 mt-xl-n7">
-                  <div class="card">
-                      <div class="d-flex p-5">
-                          <div class="pl-3">
-                              <a href="index.html"><h5 class="lh-130">Modern Family</h5></a>
-                              <p class="text-muted mb-0">
-                                Scraped the iMDB ratings of the American TV Show "Modern Family" and visualize it using Tableau. 
-                              </p><br/><span class="badge badge-primary badge-pill">Data Visualization</span>
+                  <div class="col-lg-6 order-lg-1">
+                      <div class="card mb-0 mr-lg-5">
+                          <div class="card-body p-2">
+                              <img alt="Image placeholder" src="assets/img/modern_family/mf_s11.jpg" class="img-fluid shadow rounded">
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
+          <div class="py-3">
+              <div class="row row-grid justify-content-between align-items-center">
+                  <div class="col-lg-5">
+                      <h5 class="h3">Visualization</h5>
+                      <p class="lead my-4">
+                        The data was scraped from Modern Family's iMDB page. I wanted to do a lot more visualization but I decided to reserve that for another show, so watch out for that. Anyway, here's the link for the <a href="https://github.com/lhendg/modern_family">repo</a>.</p>
+                      <ul class="list-unstyled mb-0">
+                          <li class="py-2">
+                              <div class="d-flex align-items-center">
+                                  <div>
+                                      <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                              <i data-feather="pie-chart"></i>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <span class="h6 mb-0">Tableau</span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="py-2">
+                              <div class="d-flex align-items-center">
+                                  <div>
+                                      <div class="icon icon-shape bg-danger text-white icon-sm rounded-circle mr-3">
+                                          <i data-feather="database"></i>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <span class="h6 mb-0">Scrape iMBD Ratings</span>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="card mb-0 ml-lg-5">
+                          <div class="card-body p-2">
+                              <img alt="Image placeholder" src="assets/img/modern_family/mf_ratings.jpg" class="img-fluid shadow rounded">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
     </section>
     <footer class="position-relative" id="footer-main">
         <div class="footer pt-lg-1 footer-dark bg-dark">
@@ -157,8 +170,8 @@
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class="col-md-12">
                         <div class="copyright text-sm font-weight-bold text-center text-md-middle">
-                            &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Webpixels</a>. All rights reserved
-                        </div>
+                              &copy; Lhen de Guzman | Theme by: <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Webpixels</a>
+                          </div>
                     </div>
                 </div>
             </div>
